@@ -828,10 +828,10 @@ header .navbar-default.scrolled ul.navbar-nav li a:hover {
   color: #336799;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
-  background: #336799;
+  background: #186DDC;
 }
 header .navbar-default.scrolled .navbar-brand {
-  background: #336799;
+  background: #186DDC;
 }
 section .section-heading .divider:after {
   background: #66cdcc;
