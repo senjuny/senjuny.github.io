@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="product" content="Metro UI CSS Framework">
+    <meta name="keywords" content="Metro, UI, CSS, Framework, jquery">
+    <meta name="description" content="Simple responsive css framework">
+    <meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
+
+    <link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/iconFont.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/prettify/prettify.css" rel="stylesheet">
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery.widget.min.js"></script>
+    <script src="js/jquery/jquery.mousewheel.js"></script>
+    <script src="js/prettify/prettify.js"></script>
+    <script src="js/holder/holder.js"></script>
+
+    <!-- Metro UI CSS JavaScript plugins -->
+    <script src="js/load-metro.js"></script>
+
+    <!-- Local JavaScript -->
+    <script src="js/docs.js"></script>
+    <script src="js/github.info.js"></script>
+    <script src="js/ga.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/letzgo-static/mobile/main/js/bootstrap.min.js"></script>
+
+    <title>Metro UI CSS : Simple responsive css framework</title>
+	<script src="js/metro.min.js"></script><style id="holderjs-style" type="text/css"></style>
+
+	<style type="text/css">
+
+		#container {
+		  text-align: center;
+		  width: 100%;
+		  padding-top: 10px;
+		  margin: 0 auto;
+		  height: 394px;
+  		  background-color: #ffffff;
+  		  /*padding-left: 10px;*/
+		}
+
+		/*#container  .tile{width:45%;}*/
+
+		#footer{
+			  background-color: #1ba1e2 !important;
+			  width:100%;
+			  height: 300px;
+			  display: block;
+		}
+
+		.metro .mainDiv {
+		  padding: 20px 40px 20px 60px;
+		  /*border: 1px #ccc solid;*/
+		  position: relative;
+		  margin: 0 0 10px 0;
+		  background-color: #fdfdfd !important;
+		  min-height: 100px;
+		  width:90%;
+		  display: table;
+		  margin: 0 auto;
+		}
+
+		.metro .footerDiv {
+		  padding:0px 40px 20px 60px;
+		  /*border: 1px #ccc solid;*/
+		  position: relative;
+		  margin: 0 0 10px 0;
+		  background-color: #1ba1e2 !important;
+		  min-height: 100px;
+		  width:100%;
+		  display: table;
+		  margin: 0 auto;
+		  margin-top: 10px
+		}
+
+		.metro .tile {
+		  width: 46%;
+		  height: 120px;
+		  margin: 2% 0% 1% 3%;
+
+		}
+		.metro .tile.double {
+		  width: 95%;
+		  background-color: #1ba1e2
+		}
+	</style>
+
+	</head>
+    <body class="metro">
+        
+        	<div class="navbar">
+                <div class="navbar-content">
+
+                    <a href="/" class="element"><span class="icon-grid-view"></span> METRO UI CSS <sup>2.0</sup></a>
+                    <span class="element-divider"></span>
+
+                    <a class="pull-menu" href="#"></a>
+                    <ul class="element-menu">
+                        <li>
+                            <a class="dropdown-toggle" href="#">Base CSS</a>
+                            <ul class="dropdown-menu" data-role="dropdown" style="display: none;">
+                                <li><a href="requirements.html">Requirements</a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle">General CSS</a>
+                                    <ul class="dropdown-menu" data-role="dropdown">
+                                        <li><a href="global.html">Global styles</a></li>
+                                        <li><a href="grid.html">Grid system</a></li>
+                                        <div class="divider"></div>
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="tables.html">Tables</a></li>
+                                        <li><a href="forms.html">Forms</a></li>
+                                        <li><a href="buttons.html">Buttons</a></li>
+                                        <li><a href="images.html">Images</a></li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="responsive.html">Responsive</a></li>
+                                <li class="disabled"><a href="layouts.html">Layouts and templates</a></li>
+                                <li class="divider"></li>
+                                <li><a href="icons.html">Icons</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#">Community</a>
+                            <ul class="dropdown-menu" data-role="dropdown">
+                                <li class="disabled"><a href="http://blog.metroui.net">Blog</a></li>
+                                <li class="disabled"><a href="http://forum.metroui.net">Community Forum</a></li>
+                                <li class="divider"></li>
+                                <li><a href="https://github.com/olton/Metro-UI-CSS">Github</a></li>
+                                <li class="divider"></li>
+                                <li><a href="https://github.com/olton/Metro-UI-CSS/blob/master/LICENSE">License</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="no-tablet-portrait">
+                        <span class="element-divider"></span>
+                        <a class="element brand" href="#"><span class="icon-spin"></span></a>
+                        <a class="element brand" href="#"><span class="icon-printer"></span></a>
+                        <span class="element-divider"></span>
+
+                        <div class="element input-element">
+                            <form>
+                                <div class="input-control text">
+                                    <input type="text" placeholder="Search...">
+                                    <button class="btn-search"></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="element place-right">
+                            <a class="dropdown-toggle" href="#"><span class="icon-cog"></span></a>
+                            <ul class="dropdown-menu place-right" data-role="dropdown">
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Download</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Buy Now</a></li>
+                            </ul>
+                        </div>
+                        <span class="element-divider place-right"></span>
+                        <button class="element image-button image-left place-right">
+                            Sergey Pimenov
+                            <img src="images/me.jpg">
+                        </button>
+                    </div>
+                </div>
+            
+
+            
+
+		</header>
+
+		<div id="container">
+            <div class="mainDiv">
+            	<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge bg-red">99</div>
+				    </div>
+				</div>
+				 
+				<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge activity"></div>
+				    </div>
+				</div>
+				<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge bg-red">99</div>
+				    </div>
+				</div>
+				 
+				<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge activity"></div>
+				    </div>
+				</div>
+				<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge activity"></div>
+				    </div>
+				</div>
+				<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge activity"></div>
+				    </div>
+				</div>
+
+				<div class="tile double">
+				    <div class="tile-content image">
+				        <img src="images/4.jpg">
+				    </div>
+				    <div class="brand bg-dark opacity">
+				        <span class="text">
+				            This is a desert eagle. He is very hungry and angry bird.
+				        </span>
+				    </div>
+				</div>
+				<div class="tile bg-cyan">
+				    <div class="brand">
+				        <div class="badge activity"></div>
+				    </div>
+				</div>	
+            </div>		
+           	
+
+             <div class="footerDiv">
+	         	coryright 2015 Skylife co .,Ltd
+	         </div>
+
+         </div>
+
+
+     </div>
+        
+
+    </body>
+</html>
