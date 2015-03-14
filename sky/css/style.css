@@ -1,0 +1,107 @@
+#container {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  margin: 0 auto;
+  height: 394px;
+  background-color: #ffffff;
+  /*padding-left: 10px;*/
+}
+
+/*#container  .tile{width:45%;}*/
+
+#footer{
+	  background-color: #1ba1e2 !important;
+	  width:100%;
+	  height: 300px;
+	  display: block;
+}
+
+.metro .mainDiv {
+  padding: 20px 40px 20px 60px;
+  /*border: 1px #ccc solid;*/
+  position: relative;
+  margin: 0 0 10px 0;
+  background-color: #ffffff !important;
+  min-height: 100px;
+  width:90%;
+  display: table;
+  margin: 0 auto;
+}
+
+.metro .footerDiv {
+  padding:0px 40px 20px 60px;
+  /*border: 1px #ccc solid;*/
+  position: relative;
+  margin: 0 0 10px 0;
+  background-color: #1ba1e2 !important;
+  min-height: 100px;
+  width:100%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px
+}
+
+.metro .tile {
+  width: 46%;
+  height: 120px;
+  margin: 2% 0% 1% 3%;
+
+}
+.metro .tile.double {
+  width: 95%;
+  background-color: #1ba1e2
+}
+
+#schedule {
+	display:table;
+	margin : 0 auto;
+}
+
+.textSchedule{
+	display:inline-block;
+}
+
+.btnreg{
+	background-color:red;
+	width:250px;
+}
+
+#workInfo{
+	padding:10px;
+}
+
+#workInfo ul{
+	text-align:left
+}
+
+#workInfo li{
+	display: table;
+  	width: 90%;
+  	height: 38px;
+  	margin-bottom: 3px;
+}
+
+#workInfo li p{
+	margin-top:10px;
+}
+
+#workInfo hr{margin:0px;}
+
+.styled-select {
+	width:100%;
+	background-color:#ffffff;
+}
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 100%;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+
+ }
