@@ -91,6 +91,7 @@
 .styled-select {
 	width:100%;
 	background-color:#ffffff;
+	border: 1px #d9d9d9 solid;
 }
 
 .styled-select select {
@@ -110,3 +111,27 @@
  .metro .calendar .calendar-header {
   background-color: #d80073;
 }
+
+.metro .commonDiv {
+  padding: 0px 0px 0px 0px;
+  border: 1px #ccc solid;
+  position: relative;
+  margin: 0 0 10px 0;
+  background-color: #fdfdfd !important;
+  min-height: 100px;
+}
+.metro .commonDiv ul{
+	list-style: none;
+    text-align: left;
+}
+
+.metro .commonDiv li{
+	width:93%;
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+.metro .commonDiv hr{
+	margin: 5px 0px !important;
+}
+	
