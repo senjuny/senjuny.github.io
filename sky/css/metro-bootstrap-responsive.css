@@ -109,7 +109,7 @@
   }
   .no-tablet-portrait,
   .no-tablet {
-    display: none !important;
+    /* display: none !important; */
     visibility: hidden !important;
   }
   .on-tablet {
@@ -201,7 +201,7 @@
   .navigation-bar .element-menu li,
   .navbar .element-menu li {
     display: block !important;
-    float: none !important;
+    /* float: none !important; */
     width: 100%;
   }
   .navigation-bar .element-menu li a,
