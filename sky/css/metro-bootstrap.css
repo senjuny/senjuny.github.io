@@ -6293,6 +6293,7 @@ a {
 .metro .calendar .calendar-actions td,
 .metro .calendar .calendar-actions th {
   padding: 10px;
+  display:none;
 }
 .metro .calendar .today a {
   background-color: #a0e857;

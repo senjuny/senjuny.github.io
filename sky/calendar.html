@@ -13,15 +13,23 @@
     <link href="css/iconFont.css" rel="stylesheet">
     <link href="css/docs.css" rel="stylesheet">
     <link href="js/prettify/prettify.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/jquery/jquery.widget.min.js"></script>
     <script src="js/jquery/jquery.mousewheel.js"></script>
     <script src="js/prettify/prettify.js"></script>
     <script src="js/holder/holder.js"></script>
+    <script src="js/metro/metro-calendar.js"></script>
+    <script src="js/metro/metro-locale.js"></script>
+    <script src="js/metro/metro-global.js"></script>
+	<script src="js/metro/metro-accordion.js"></script>
+	<script src="js/metro/metro-dropdown.js"></script>
 
     <!-- Metro UI CSS JavaScript plugins -->
     <script src="js/load-metro.js"></script>
-
+	
+	
     <!-- Local JavaScript -->
     <script src="js/docs.js"></script>
     <script src="js/github.info.js"></script>
@@ -29,65 +37,9 @@
     <script type="text/javascript" src="https://s3.amazonaws.com/letzgo-static/mobile/main/js/bootstrap.min.js"></script>
 
     <title>Metro UI CSS : Simple responsive css framework</title>
-	<script src="js/metro.min.js"></script><style id="holderjs-style" type="text/css"></style>
+	<script src="js/metro.min.js"></script>
+	<style id="holderjs-style" type="text/css"></style>
 
-	<style type="text/css">
-
-		#container {
-		  text-align: center;
-		  width: 100%;
-		  padding-top: 10px;
-		  margin: 0 auto;
-		  height: 394px;
-  		  background-color: #ffffff;
-  		  /*padding-left: 10px;*/
-		}
-
-		/*#container  .tile{width:45%;}*/
-
-		#footer{
-			  background-color: #1ba1e2 !important;
-			  width:100%;
-			  height: 300px;
-			  display: block;
-		}
-
-		.metro .mainDiv {
-		  padding: 20px 40px 20px 60px;
-		  /*border: 1px #ccc solid;*/
-		  position: relative;
-		  margin: 0 0 10px 0;
-		  background-color: #fdfdfd !important;
-		  min-height: 100px;
-		  width:90%;
-		  display: table;
-		  margin: 0 auto;
-		}
-
-		.metro .footerDiv {
-		  padding:0px 40px 20px 60px;
-		  /*border: 1px #ccc solid;*/
-		  position: relative;
-		  margin: 0 0 10px 0;
-		  background-color: #1ba1e2 !important;
-		  min-height: 100px;
-		  width:100%;
-		  display: table;
-		  margin: 0 auto;
-		  margin-top: 10px
-		}
-
-		.metro .tile {
-		  width: 46%;
-		  height: 120px;
-		  margin: 2% 0% 1% 3%;
-
-		}
-		.metro .tile.double {
-		  width: 95%;
-		  background-color: #1ba1e2
-		}
-	</style>
 
 	</head>
     <body class="metro">
@@ -176,10 +128,88 @@
 
 		<div id="container">
 			<!-- 내용 시작 -->
+			<div>
+				<h3 class="textSchedule" style="vertical-align:meddle !important">내 작업 일정</h3>
+			</div>
+			
             <div class="mainDiv">
-            	<div class="calendar"></div>
+            	<div class="calendar" id="schedule"></div>
             </div>		
-           	<!-- 내용 시작 -->
+            
+            <div style="text-align:center;margin-top:20px">
+                 <h3 class="no-margin">작업내역</h3>
+                 <p id="calendar-output2">(2015.03.15)</p>
+                
+             </div>
+             <div id="workInfo" class="notice marker-on-top bg-blue" style="margin: 10px 30px 10px 30px">
+				    <ul>
+				    	<li><p>일정 : 2015/03/15</p></li>
+				    	<hr>
+				    	<li><p>상차지 : 서울시 잠실 1동 451-345 </p></li>
+				    	<hr>
+				    	<li><p>상차지 연락처 : 010-2234-454 </p></li>
+				    	<hr>
+				    	<li><p>하차지 : 서울시 잠실 1동 451-345 </p></li>
+				    	<hr>
+				    	<li><p>하차지 연락처 : 010-2234-454 </p></li>
+				    	<hr>
+				    	<li><p>작업시간 : 3시간</p></li>
+				    	<hr>
+				    	<li><p>작업요금 : 350,000원</p></li>
+				    </ul>
+			 </div>
+			 
+			 <div style="text-align:center;margin-top:20px">
+                 <h3 class="no-margin">작업입력</h3>
+                 <p id="calendar-output2">(2015.03.20)</p>
+                
+             </div>
+             <div id="workInfo" class="notice marker-on-top bg-blue" style="margin: 10px 30px 10px 30px">
+				    <ul>
+				    	<li> 
+				    		<div class="input-control text" data-role="input-control">
+                                <input type="text" placeholder="상차지 주소">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                        </li>
+				    	<li> 
+				    		<div class="input-control text" data-role="input-control">
+                                <input type="text" placeholder="상차지 연락처">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                        </li>
+				    	<li> 
+				    		<div class="input-control text" data-role="input-control">
+                                <input type="text" placeholder="하차지">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                        </li>
+                        <li> 
+				    		<div class="input-control text" data-role="input-control">
+                                <input type="text" placeholder="하차지 연락처">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                        </li>
+                        <li> 
+				    			<div class="styled-select">
+								   <select style="color:#9C9999;">
+								      <option>작업시간을 선택해주세요</option>
+								      <option>1</option>
+								   </select>
+								</div>
+                        </li>
+                        <li> 
+				    		<div class="input-control text" data-role="input-control">
+                                <input type="text" placeholder="작업비">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                        </li>
+				    </ul>
+			 </div>
+			 
+            <button class="button large  info btnreg" style="margin-top: 10px;">작업등록하기</button>
+            
+           	<!-- 내용 끝 -->
            	
            	
            	<!-- footer 시작 -->
@@ -195,3 +225,31 @@
 
     </body>
 </html>
+<script>
+//$("#schedule").calendar();
+
+
+$("#schedule").calendar({
+    //format: string, //default 'yyyy-mm-dd'
+    multiSelect: false, //default true (multi select date)
+    startMode: 'day', //year, month, day
+    //date: string, //the init calendar date (example: '2013-01-01' or '2012-01')
+    locale: 'en', // 'ru', 'ua', 'fr' or 'en', default is $.Metro.currentLocale
+    otherDays: false, // show days for previous and next months,
+    weekStart: 0, //start week from sunday - 0 or monday - 1
+    getDates: function(d){
+    	
+    	
+    }, // see example below
+    click: function(d){
+    	var out = $("#calendar-output2").html("");
+        out.html("("+d+")");
+    }, // fired when user clicked on day, in "d" stored date
+});
+
+
+
+$("#workTiem").dropdown({
+    effect: 'fade'
+});
+</script>
