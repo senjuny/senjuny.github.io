@@ -105,3 +105,8 @@
    -webkit-appearance: none;
 
  }
+
+ 
+ .metro .calendar .calendar-header {
+  background-color: #d80073;
+}
