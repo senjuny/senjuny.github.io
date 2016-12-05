@@ -1,0 +1,10 @@
+{
+	"result": [{
+		"appUrl": "http://itue",
+		"updateVersion": "1.0.0",
+		"updateMust": "1.0.2",
+		"webViewVersion": "0",
+		"alertVersion": "0",
+		"alertContent": "안녕하세요.오픈 기념 턴스톡스입니다."
+	}]
+}
